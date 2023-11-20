@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Set the agent's image (convert agent name to lowercase)
                 const agentImageName = selectedAgent.toLowerCase() + ".png";
-                agentImage.src = agentImageName;
+                agentImage.src = `images/${agentImageName}`;
                 agentImage.alt = `${selectedAgent} Image`;
 
                 // Show the agent result and hide the challenge result
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 // Set the agent's image
                 const agentImageCombined = selectedAgentCombined.toLowerCase() + ".png";
-                agentImage.src = agentImageCombined;
+                agentImage.src = `images/${agentImageCombined}`;
                 agentImage.alt = `${selectedAgentCombined} Image`;
 
                 // Set the challenge result

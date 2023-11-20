@@ -4,7 +4,7 @@ body {
     font-family: 'ValorantFont', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('Background.jpeg');
+    background-image: url('images/Background.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff; /* Set the default text color to white */
