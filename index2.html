@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Random Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Valorant Random Selector!</h1>
+        <div class="input-container">
+            <label for="choice">Choose an option:</label>
+            <select id="choice">
+                <option value="1">Random Agent</option>
+                <option value="2">Random Game Mode Challenge</option>
+                <option value="3">Random Agent and Game Mode Challenge</option>
+            </select>
+            <button id="selectButton">Select</button>
+
+        </div>
+        <div id="result-container" class="result-container">
+            <div class="agent-result">
+                <div class="result-heading"></div>
+                <div class="result-content">
+                    <img id="agent-image" src="" alt="Agent Image">
+                    <div id="agent-name"></div>
+                </div>
+            </div>
+            <div class="challenge-result">
+                <div class="result-heading"></div>
+                <div class="result-content" id="challenge-result"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
