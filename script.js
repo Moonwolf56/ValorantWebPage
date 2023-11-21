@@ -108,4 +108,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 challengeResultDiv.style.display = "none";
         }
     });
+
+    // JavaScript for the Go Back button
+    const goBackButton = document.getElementById("goBackButton");
+
+    goBackButton.addEventListener("click", function () {
+        // Navigate back to the main page (replace "home.html" with your main page's URL)
+        window.location.href = "home.html";
+    });
+
+    
 });

@@ -95,6 +95,12 @@ button:hover {
     display: none;
 }
 
+.top-right-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
 
 @font-face {
     font-family: 'ValorantFont'; /* Define a name for your custom font */
@@ -102,4 +108,9 @@ button:hover {
     font-weight: normal;
     font-style: normal;
 }
+
+
+
+
+
 
