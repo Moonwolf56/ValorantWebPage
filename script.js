@@ -117,5 +117,30 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "home.html";
     });
 
-    
+    // Function to handle animations based on scroll position
+    function handleScrollAnimations(entries, observer) {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const target = entry.target;
+                const animationClass = target.getAttribute('data-scroll');
+                target.classList.add(animationClass);
+                observer.unobserve(target);
+            }
+        });
+    }
+
+    // Set up the IntersectionObserver
+    const observer = new IntersectionObserver(handleScrollAnimations, {
+        root: null, // Use the viewport as the root
+        rootMargin: '0px', // No margin
+        threshold: 0.2, // 20% of the target element must be visible
+    });
+
+    // Find all elements with the data-scroll attribute
+    const scrollElements = document.querySelectorAll('[data-scroll]');
+
+    // Observe each scroll element
+    scrollElements.forEach((element) => {
+        observer.observe(element);
+    });
 });
